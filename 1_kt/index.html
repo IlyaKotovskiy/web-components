@@ -1,252 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--BOOTSTRAP-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <!--CSS-->
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First checkpoint</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1 class="mainTitle">GRID BOOTSTRAP TEMPLATES</h1>
-    <div class="container">
-        <h2>
-            Равная ширина
-        </h2>
-        <p>
-            Например, вот два макета сетки, которые применяются к каждому устройству и окну просмотра, от xs до xxl.
-            Добавьте любое количество классов без единиц измерения для каждой нужной контрольной точки, и каждая колонка
-            будет одинаковой ширины.
-        </p>
-        <div class="row">
-            <div class="col">
-                1 of 2
-            </div>
-            <div class="col">
-                2 of 2
-            </div>
+    <template id="contact-card">
+        <div class="contact-card">
+            <img src="" alt="Контактное изображение">
+            <h2>Имя</h2>
+            <p>Email: <span></span></p>
+            <p>Телефон: <span></span></p>
         </div>
-        <div class="row">
-            <div class="col">
-                1 of 3
-            </div>
-            <div class="col">
-                2 of 3
-            </div>
-            <div class="col">
-                3 of 3
-            </div>
-        </div>
-        <h2>
-            Установка ширины одного колонки
-        </h2>
-        <p>
-            Автоматическая компоновка колонок сетки Flexbox также означает, что Вы можете установить ширину одного
-            колонки и автоматически изменять размер колонок-братьев вокруг него. Вы можете использовать предопределенные
-            классы сетки (как показано ниже), миксины сетки или встроенную ширину. Обратите внимание, что размер других
-            колонок будет изменяться независимо от ширины центрального колонки.
-        </p>
-        <div class="row">
-            <div class="col">
-                1 of 3
-            </div>
-            <div class="col-6">
-                2 of 3 (шире)
-            </div>
-            <div class="col">
-                3 of 3
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                1 of 3
-            </div>
-            <div class="col-5">
-                2 of 3 (шире)
-            </div>
-            <div class="col">
-                3 of 3
-            </div>
-        </div>
-        <h2>
-            Переменная ширина контента
-        </h2>
-        <p>
-            Используйте классы col-{breakpoint}-auto для определения размера колонок в зависимости от естественной
-            ширины их содержимого.
-        </p>
-        <div class="row justify-content-md-center">
-            <div class="col col-lg-2">
-                1 of 3
-            </div>
-            <div class="col-md-auto">
-                Переменная ширина контента
-            </div>
-            <div class="col col-lg-2">
-                3 of 3
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                1 of 3
-            </div>
-            <div class="col-md-auto">
-                Переменная ширина контента
-            </div>
-            <div class="col col-lg-2">
-                3 of 3
-            </div>
-        </div>
-        <h2>
-            Адаптивные классы
-        </h2>
-        <p>
-            Сетка Bootstrap включает шесть уровней предопределенных классов для создания сложных адаптивных макетов.
-            Настройте размер колонок на очень маленьких, маленьких, средних, больших или очень больших устройствах по
-            своему усмотрению.
-        </p>
-        <h2>
-            Все контрольные точки
-        </h2>
-        <p>
-            Для сеток, одинаковых от самых маленьких до самых крупных, используйте классы .col и .col-*. Укажите
-            нумерованный класс, если Вам нужна колонка определенного размера; в противном случае не стесняйтесь
-            использовать .col.
-        </p>
-        <div class="row">
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
-        </div>
-        <div class="row">
-            <div class="col-8">col-8</div>
-            <div class="col-4">col-4</div>
-        </div>
-        <h2>
-            Сложение по горизонтали
-        </h2>
-        <p>
-            Используя один набор классов .col-sm-*, Вы можете создать базовую систему сеток, которая начинается с
-            накопления и становится горизонтальной в малой контрольной точке (sm).
-        </p>
-        <div class="row">
-            <div class="col-sm-8">col-sm-8</div>
-            <div class="col-sm-4">col-sm-4</div>
-        </div>
-        <div class="row">
-            <div class="col-sm">col-sm</div>
-            <div class="col-sm">col-sm</div>
-            <div class="col-sm">col-sm</div>
-        </div>
-        <h2>
-            Смешение и сочетание
-        </h2>
-        <p>
-            Не хотите, чтобы Ваши колонки просто складывались в несколько ярусов сетки? При необходимости используйте
-            комбинацию разных классов для каждого уровня. См. пример ниже, чтобы лучше понять, как все это работает.
-        </p>
-        <!-- Сложите колонки на мобильном устройстве, сделав одну полную, а другую половинную -->
-        <div class="row">
-            <div class="col-md-8">.col-md-8</div>
-            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        </div>
-
-        <!-- Ширина колонок начинается с 50% на мобильных устройствах и увеличивается до 33,3% на компьютерах. -->
-        <div class="row">
-            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        </div>
-
-        <!-- Колонки всегда имеют ширину 50% на мобильных и настольных компьютерах. -->
-        <div class="row">
-            <div class="col-6">.col-6</div>
-            <div class="col-6">.col-6</div>
-        </div>
-        <h2>
-            Ряд колонок
-        </h2>
-        <p>
-            Используйте адаптивные классы .row-cols-*, чтобы быстро установить количество столбцов, которые лучше всего
-            отображают ваш контент и макет. В то время как обычные классы .col-* применяются к отдельным столбцам
-            (например, .col-md-4), классы столбцов строк устанавливаются в родительском .row в качестве ярлыка. С
-            помощью .row-cols-auto вы можете придать столбцам их естественную ширину.
-        </p>
-        <p>
-            Используйте эти классы столбцов строк для быстрого создания базовых макетов сетки или для управления
-            макетами карточек.
-        </p>
-        <div class="row row-cols-2 mb-20">
-            <div class="col">Колонка</div>
-            <div class="col">Колонка</div>
-            <div class="col">Колонка</div>
-            <div class="col">Колонка</div>
-        </div>
-        <div class="row row-cols-3 mb-20">
-            <div class="col">Колонка</div>
-            <div class="col">Колонка</div>
-            <div class="col">Колонка</div>
-            <div class="col">Колонка</div>
-        </div>
-        <div class="row row-cols-auto mb-20">
-            <div class="col">Колонка</div>
-            <div class="col">Колонка</div>
-            <div class="col">Колонка</div>
-            <div class="col">Колонка</div>
-        </div>
-        <div class="row row-cols-4 mb-20">
-            <div class="col">Колонка</div>
-            <div class="col">Колонка</div>
-            <div class="col">Колонка</div>
-            <div class="col">Колонка</div>
-        </div>
-        <div class="row row-cols-4 mb-20">
-            <div class="col">Колонка</div>
-            <div class="col">Колонка</div>
-            <div class="col-6">Колонка</div>
-            <div class="col">Колонка</div>
-        </div>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 mb-20">
-            <div class="col">Колонка</div>
-            <div class="col">Колонка</div>
-            <div class="col">Колонка</div>
-            <div class="col">Колонка</div>
-        </div>
-        <h2>
-            Вложенность
-        </h2>
-        <p>
-            Чтобы вложить содержимое в сетку по умолчанию, добавьте новую колонку .row и набор колонок .col-sm-* в
-            существующую колонку .col-sm-*. Вложенные строки должны включать набор колонок, которые в сумме составляют
-            до 12 или меньше (не обязательно использовать все 12 доступных колонок).
-        </p>
-        <div class="row">
-            <div class="col-sm-3">
-                Уровень 1: .col-sm-3
-            </div>
-            <div class="col-sm-9">
-                <div class="row">
-                    <div class="col-8 col-sm-6">
-                        Уровень 2: .col-8 .col-sm-6
-                    </div>
-                    <div class="col-4 col-sm-6">
-                        Уровень 2: .col-4 .col-sm-6
-                    </div>
-                </div>
-            </div>
-        </div>
+    </template>
+    <div id="contacts-container" class="contacts-container">
+        <h1>Персональные карточки контактов</h1>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
